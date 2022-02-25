@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    </style>
+    <title>Upload Product</title>
+</head>
+<body>
+    <section>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            Product Name: <input type="text" name="name" class="input" />
+            <br>
+            Price: <input type="text" name="price" class="input" />
+            <br>
+            Product Description:<input type="text" name="description" class="input" />
+            <br>
+            Rating: <input type="text" name="rating" class="input" />
+            <br>
+            Category: <input type="text" name="category" class="input"name" class="input" />
+            <br>
+            Brand Name: <input type="text" name="brand_name" class="input" />
+            <br>
+            <input type="file" name="product_img">
+            <br>
+            <input type="submit" name="submit" value="Upload">
+          </form>
+    </section>
+</body>
+</html>
